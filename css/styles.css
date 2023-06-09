@@ -205,6 +205,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -305,6 +306,7 @@ margin-bottom: 8px;
   background-color: var(--white-color);
    flex-basis: calc((100% - 3 * 24px) / 4); 
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-img {
@@ -312,18 +314,16 @@ margin-bottom: 8px;
  
 }
 .name-person {
-  padding: 32px 16px 8px;
+  padding: 32px 0;
  
 }
-.icons {
-  width: 232px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 32px;
-}
+
 .icons-list {
   display: flex;
   gap: 24px;
+  width: 232px;
+  margin-left: auto;
+  margin-right: auto;
   
 }
 
