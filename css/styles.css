@@ -80,6 +80,7 @@ img {
 }
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   border-bottom: var(--accent-color);
@@ -95,8 +96,17 @@ img {
   padding: 24px 0;
   
 }
+.header-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+  padding: 24px 0;
+}
 .opened-page {
   position: relative;
+  color: var(--pressed-state-color);
 
 }
 .opened-page::after {
@@ -108,6 +118,7 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: var(--pressed-state-color);
+  bottom: -1px; 
 }
 .header-menu {
   display: flex;
@@ -120,14 +131,7 @@ img {
   
 }
 
-.header-link {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--dark-color);
-  padding: 24px 0;
-}
+
 .header-link:hover,
 .header-link:focus {
   color: var(--pressed-state-color);
@@ -145,6 +149,7 @@ img {
 
 .header-list-item {
  padding: 0;
+
   
 }
 
@@ -155,7 +160,7 @@ img {
   color: inherit;
   padding: 24px 0;
   display: inline-block;
- 
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-list-link:hover,
 .header-list-link:focus {
@@ -164,6 +169,11 @@ img {
 .hero {
   background-color: var(--dark-color);
   padding: 188px 0;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-bg.jpg);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover; 
 }
 .hero-title {
   font-weight: 700;
