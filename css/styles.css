@@ -401,11 +401,13 @@ flex-basis: calc((100% - 5 * 24px) / 6);
 .footer-wrap {
   display: flex;
  min-width: 208px;
+ align-items: baseline
 }
 .footer-container {
   padding: 0;
   min-width: 264px;
   margin-right: 120px;
+ 
 }
 .footer-logo {
   display: inline-block; 
@@ -439,15 +441,25 @@ margin-bottom: 16px;
 }
 .social-items {
   width: calc((100% - 16px) / 3);
+  width: 40px;
+  height: 40px;
 }
 
-.icons-link {
-  height: 24px;
-}
+
 .footer-bg-icons:hover {
   background-color: var(--succes-color);
 }
+.icons-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+width: 100%;
+height: 100%;
+border-radius: 50%;
+ background-color: var(--primary-brand-color);
+ transition: background-color 300ms linear;
 
+}
 .icons-link:focus .footer-bg-icons {
   background-color: var(--succes-color);
 }
