@@ -438,7 +438,7 @@ img {
   height: 100%;
   border-radius: 50%;
   background-color: var(--primary-brand-color);
-  transition: background-color 300ms linear;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icons-link:hover {
   background-color: var(--succes-color);
@@ -564,7 +564,8 @@ img {
   position: relative;
   overflow: hidden;
 }
-.hidden-text-block {
+.hidden-text {
+  display: block;
   position: absolute;
   top: 0;  
   padding: 40px 32px;
@@ -573,8 +574,6 @@ img {
   width: 100%;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hidden-text {
  font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
@@ -588,7 +587,7 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   
 }
-.porfolio-list-item:hover .hidden-text-block {
+.porfolio-list-item:hover .hidden-text {
 transform: translateY(0%);
 }
 .porfolio-list-img {
